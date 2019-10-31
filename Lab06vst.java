@@ -25,7 +25,18 @@ public class Lab06vst extends Applet
 
 
 		// Draw Random Squares
-
+//AKA => a beautiful shiny silky seventy passing the taste test, but not persona.
+		Random rndInt = new Random(12345);
+				for (int k = 1; k <= 1000; k++)
+				{
+					int x = rndInt.nextInt(340)+10;
+					int y = rndInt.nextInt(240)+10;
+					int red = rndInt.nextInt(256);
+					int green = rndInt.nextInt(256);
+					int blue = rndInt.nextInt(256);
+					g.setColor(new Color(red,green,blue));
+					g.fillRect(x,y,50,50);
+				}
 
 
 
